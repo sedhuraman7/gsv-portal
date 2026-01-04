@@ -1,4 +1,5 @@
-// Imports updated
+'use client';
+
 import { useState } from 'react';
 import { IoMenu, IoClose } from 'react-icons/io5';
 import Link from 'next/link';
