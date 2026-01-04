@@ -1,0 +1,56 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary) 0%, #0f172a 100%);
+  color: white;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #ffffff, #93c5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin-bottom: 3rem;
+  color: #cbd5e1;
+}
+
+.actions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.features {
+  padding: 5rem 2rem;
+  background: var(--surface);
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.featureCard {
+  padding: 2rem;
+  border-radius: var(--radius);
+  background: var(--background);
+  border: 1px solid var(--border);
+  transition: transform 0.2s;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+}

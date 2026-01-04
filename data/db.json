@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "_id": "0cnw3gu1o",
+      "createdAt": "2026-01-03T15:52:18.207Z",
+      "updatedAt": "2026-01-03T16:06:46.735Z",
+      "name": "SEDHURAMAN R",
+      "email": "23104305@rmd.ac.in",
+      "password": "$2b$10$wgapHPm2VccEv6SlrGiml.vCh.cMK57m7ygn7SWGWeOwILaiDdSsK",
+      "role": "student",
+      "phone": "08946069501",
+      "college": "rmd",
+      "department": "ECE",
+      "year": "3",
+      "domain": "App Development",
+      "resumeUrl": "/uploads/1767455538204-sanjana_id.pdf",
+      "status": "approved"
+    },
+    {
+      "_id": "fnchlvy6j",
+      "createdAt": "2026-01-03T15:56:44.816Z",
+      "updatedAt": "2026-01-03T15:56:44.816Z",
+      "name": "R.Sedhuraman",
+      "email": "sedhu123sedhu@gmail.com",
+      "password": "$2b$10$2rwFhgFNN/R1habudiEAieVnBnfxcrkwJhmcit8gH3BC57sP/zXdu",
+      "role": "admin"
+    },
+    {
+      "_id": "evj4znc1w",
+      "createdAt": "2026-01-03T16:19:38.713Z",
+      "updatedAt": "2026-01-03T16:21:11.950Z",
+      "name": "sanjana A",
+      "email": "23104141@rmd.ac.in",
+      "password": "$2b$10$w.3msY6wR.3dexg9551UTOA5/wxCHUhj4sqH3.uON26wIKov3KFlG",
+      "role": "student",
+      "status": "rejected",
+      "phone": "06374267488",
+      "college": "rmd",
+      "department": "ECE",
+      "year": "3",
+      "domain": "Embedded Systems & IoT",
+      "about": "sdryuiop['.,m ",
+      "startDate": "2026-01-10",
+      "endDate": "2026-02-10",
+      "resumeUrl": "/uploads/1767457178710-certificate.pdf"
+    }
+  ],
+  "tasks": [],
+  "attendance": [],
+  "submissions": [],
+  "announcements": []
+}
