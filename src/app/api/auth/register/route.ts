@@ -51,20 +51,8 @@ export async function POST(req: Request) {
             userData.startDate = formData.get('startDate');
             userData.endDate = formData.get('endDate');
 
-            const file = formData.get('resume') as File | null;
-            if (file) {
-                const buffer = Buffer.from(await file.arrayBuffer());
-                const filename = `${Date.now()}-${file.name.replace(/\s/g, '_')}`;
-                const uploadDir = path.join(process.cwd(), 'public', 'uploads');
-
-                // Ensure dir exists
-                if (!fs.existsSync(uploadDir)) {
-                    fs.mkdirSync(uploadDir, { recursive: true });
-                }
-
-                await writeFile(path.join(uploadDir, filename), buffer);
-                userData.resumeUrl = `/uploads/${filename}`;
-            }
+            // Resume Link instead of File Upload (To fix Netlify EROFS)
+            userData.resumeUrl = formData.get('resumeUrl') || '';
         }
 
         const newUser = await User.create(userData);

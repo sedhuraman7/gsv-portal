@@ -197,8 +197,17 @@ function RegisterForm() {
                             </div>
 
                             <div className="form-group">
-                                <label className="form-label">Resume (PDF)</label>
-                                <input name="resume" type="file" accept="application/pdf" className="form-input" required />
+                                <label className="form-label">Resume / CV Link (Google Drive / LinkedIn)</label>
+                                <input
+                                    name="resumeUrl"
+                                    type="url"
+                                    placeholder="https://drive.google.com/..."
+                                    className="form-input"
+                                    required
+                                />
+                                <small style={{ display: 'block', marginTop: '0.25rem', color: '#64748b' }}>
+                                    Please ensure the link is publicly accessible (Anyone with link can view).
+                                </small>
                             </div>
                         </>
                     )}
